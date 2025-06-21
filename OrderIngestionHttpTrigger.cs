@@ -44,9 +44,7 @@ namespace OrderIngestionFunction
             try
             {
                 string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 Order order = JsonConvert.DeserializeObject<Order>(requestBody);
-#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                 if (order == null)
                 {
