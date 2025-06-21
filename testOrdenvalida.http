@@ -1,0 +1,18 @@
+POST http://localhost:7071/api/IngestOrder
+Content-Type: application/json
+
+{
+  "OrderId": "ORD007",
+  "CustomerId": "CUST123",
+  "Items": [
+    {
+      "Sku": "SKU001",
+      "Quantity": 2
+    },
+    {
+      "Sku": "SKU002",
+      "Quantity": 1
+    }
+  ],
+  "TotalAmount": 46.00
+}

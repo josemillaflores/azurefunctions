@@ -1,0 +1,15 @@
+### Solicitud de Orden con Producto No Disponible
+POST http://localhost:7071/api/IngestOrder
+Content-Type: application/json
+
+{
+  "OrderId": "ORD009",
+  "CustomerId": "CUST123",
+  "Items": [
+    {
+      "Sku": "SKU003",
+      "Quantity": 1
+    }
+  ],
+  "TotalAmount": 5.75
+}
